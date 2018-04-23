@@ -9,3 +9,11 @@
 * git Konfiguration ändern (E-Mail): *git config --global user.email <useremail>*
 * und überprüfen mit *git config --list*
   
+### git Befehle (funktioniert nur in einem git-Verzeichnis!)
+
+* git status
+* git add <filename oder *.*>
+* git commit -m "commit message"
+* git pull (um Änderungen vom Server zu holen)
+* git push (um Änderungen auf den Server zu laden)
+
