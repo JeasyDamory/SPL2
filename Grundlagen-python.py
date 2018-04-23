@@ -1,5 +1,5 @@
 # Grundlagen-python.py
-
+import random
 # Kommentare erfolgen mit hashtags
 
 # Ausgabe von Daten
@@ -26,5 +26,21 @@ print("But I still like the bigger number,", int(favouriteNum)+10, ", a lot more
 round = input("How many rounds should we play? ")
 round = int(round)
 
+
 for i in range(1, round+1):
-    print("Round", i, "of", round, ": Winner:", who)
+
+    winner = " "
+
+# generate random number
+    randomNum = random.randint(1,6)
+
+# if random number is 1,3 or 5: I win
+# otherwise: computer wins
+
+    if(randomNum == 1 or randomNum == 3 or randomNum == 5):
+        winner = who
+    else: 
+        winner = "computer"
+
+
+    print("Round", i, "of", round, ": Winner =", winner, " - diced was: ", randomNum)
