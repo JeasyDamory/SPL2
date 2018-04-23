@@ -26,12 +26,12 @@ print("But I still like the bigger number,", int(favouriteNum)+10, ", a lot more
 round = input("How many rounds should we play? ")
 round = int(round)
 
+whoWins = 0
+computerWins = 0
 
 for i in range(1, round+1):
 
     winner = " "
-    whoWins = 0
-    computerWins = 0
 
 # generate random number
     randomNum = random.randint(1,6)
@@ -49,11 +49,15 @@ for i in range(1, round+1):
 
     print("Round", i, "of", round, ": Winner =", winner, " - diced was: ", randomNum)
 
+print(who, ": computer")
+print(whoWins, ":", computerWins)
+
 if (whoWins > computerWins):
     print("You win!")
 elif (whoWins == computerWins):
     print("Tie!")
 elif (computerWins > whoWins):
     print("Computer wins!")
+    
 
 print("Game Over")
