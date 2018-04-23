@@ -19,3 +19,5 @@ if (wer == "ich"):
 else:
     print("Hey", wer, "!")
 
+favouriteNum = input("What is your favourite number? ")
+print("Nice! I like the number", favouriteNum, "as well.")
