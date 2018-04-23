@@ -14,8 +14,8 @@ print(home, "to World: ", "Hello!")
 who = input("And who are you? ")
 
 # und gibt den Text wieder aus
-if (who == "ich"):
-    print("Hey", "you")
+if (who == "me"):
+    print("Hey you!")
 else:
     print("Hey", who, "!")
 
@@ -25,3 +25,6 @@ print("But I still like the bigger number,", int(favouriteNum)+10, ", a lot more
 
 round = input("How many rounds should we play? ")
 round = int(round)
+
+for i in range(1, round+1):
+    print("Round", i, "of", round, ": Winner:", who)
