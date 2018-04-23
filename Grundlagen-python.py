@@ -44,3 +44,5 @@ for i in range(1, round+1):
 
 
     print("Round", i, "of", round, ": Winner =", winner, " - diced was: ", randomNum)
+
+print("Game Over")
