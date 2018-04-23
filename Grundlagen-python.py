@@ -21,3 +21,4 @@ else:
 
 favouriteNum = input("What is your favourite number? ")
 print("Nice! I like the number", favouriteNum, "as well.")
+print("But I still like the bigger number,", int(favouriteNum)+10, ", a lot more!")
