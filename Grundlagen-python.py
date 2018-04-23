@@ -30,6 +30,8 @@ round = int(round)
 for i in range(1, round+1):
 
     winner = " "
+    whoWins = 0
+    computerWins = 0
 
 # generate random number
     randomNum = random.randint(1,6)
@@ -37,12 +39,21 @@ for i in range(1, round+1):
 # if random number is 1,3 or 5: I win
 # otherwise: computer wins
 
-    if(randomNum == 1 or randomNum == 3 or randomNum == 5):
+    if (randomNum == 1 or randomNum == 3 or randomNum == 5):
         winner = who
+        whoWins += 1
     else: 
         winner = "computer"
+        computerWins += 1
 
 
     print("Round", i, "of", round, ": Winner =", winner, " - diced was: ", randomNum)
+
+if (whoWins > computerWins):
+    print("You win!")
+elif (whoWins == computerWins):
+    print("Tie!")
+elif (computerWins > whoWins):
+    print("Computer wins!")
 
 print("Game Over")
