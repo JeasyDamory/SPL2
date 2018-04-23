@@ -6,19 +6,22 @@
 print("Hello World")
 
 # Variablen definieren (kann ohne Typ erfolgen)
-heimat = "Earth"
+home = "Earth"
 
-print(heimat, "to World: ", "Hello!")
+print(home, "to World: ", "Hello!")
 
 # Eingabe
-wer = input("And who are you? ")
+who = input("And who are you? ")
 
 # und gibt den Text wieder aus
-if (wer == "ich"):
+if (who == "ich"):
     print("Hey", "you")
 else:
-    print("Hey", wer, "!")
+    print("Hey", who, "!")
 
 favouriteNum = input("What is your favourite number? ")
 print("Nice! I like the number", favouriteNum, "as well.")
 print("But I still like the bigger number,", int(favouriteNum)+10, ", a lot more!")
+
+round = input("How many rounds should we play? ")
+round = int(round)
